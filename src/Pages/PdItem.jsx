@@ -11,7 +11,7 @@ const PdItemBlock = styled.div`
             display : block;
             width : 160px;
             height : 100px;
-            object-fix : cover;
+            object-fit : cover;
         }
     }
 
@@ -45,7 +45,7 @@ const PdItem = ({article}) => {
                 {MAIN_IMG_NORMAL && (
                     <div className='thumbnail'>
                         <a href='MAIN_IMG_NORMAL' target='_blank' rel='noopener noreferrer'>
-                            <img src={MAIN_IMG_NORMAL}/>
+                            <img src={MAIN_IMG_NORMAL} alt='thumbnail'/>
                         </a>
                     </div>
                 )}
