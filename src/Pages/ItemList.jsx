@@ -42,7 +42,8 @@ const ItemList = ({category}) => {
                     response = await axios.get('https://apis.data.go.kr/6260000/WalkingService/getWalkingKr?serviceKey=dw13O1bisWHxtxSYLcTJ%2FRibQvxPCzAWvEyjdrGKbDm3bopoDo%2BdazvXqnMI5BGwLv0WrICm6oXohW2wd1o92A%3D%3D&resultType=json')
                     console.log(response.data.getWalkingKr.item)
                     setArticles(response.data.getWalkingKr.item)
-                    break; 
+                    break;
+                    default:alert("카테고리 선택") 
                  }
                  
             }catch(e){
